@@ -1,0 +1,153 @@
+body {
+    font-family: 'Raleway';
+    font-weight: 200;
+}
+
+.abs-center-x {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+}
+
+.vertical-center {
+    min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 80vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+}
+
+a:link    {color:#000; text-decoration: none;}  /* unvisited link  */
+a:visited {color:#000; text-decoration: none;}  /* visited link    */
+a:hover   {color:#000; text-decoration: none;}  /* mouse over link */
+a:active  {color:#000; text-decoration: none;}  /* selected link   */ 
+
+.nav-link {
+    padding: 0;
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+ul.nav {
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+li.nav-item  {
+    padding: 0.25em 0.5em;
+}
+
+strong {
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    -webkit-letter-spacing: -0.028em;
+    -moz-letter-spacing: -0.028em;
+    -ms-letter-spacing: -0.028em;
+    letter-spacing: -0.028em;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: lighter;
+    margin: .7em 0;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: lighter;
+    margin: 0.25em 0;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0.25em 0;
+}
+
+h5 {
+    font-size: 0.7em;
+    font-weight: normal;
+    font-style: italic;
+    margin: 0.25em 0;
+    color: #3d4551;
+}
+
+p {
+    font-size: 2em;
+    text-align: center;
+    margin: 0.5em;
+}
+
+p.left {
+    margin: 0;
+    margin-right: 0.5em;
+    font-size: 1.3em;
+}
+
+img.keyboard {
+    margin: 20px;
+    border-radius: 10%;
+}
+
+@media (max-width: 720px) {
+    .midContainer {
+        padding-left: 2em!important;
+        padding-right: 2em!important;
+    }
+    
+    img.keyboard {
+        height: 230px;
+        width: 300px;
+
+    }
+}
+
+@media (min-width: 720px) {
+    li.nav-item {
+        font-size: 1.25em;
+        padding: 1em;
+    }
+
+    p {
+        font-size: 3em;
+    }
+
+    p.left {
+        text-align: left;
+        font-size: 1.7em;
+        margin: 0.5em;
+        margin-left: 0;
+    }
+    
+    h1 {
+        font-size: 2.25em;
+        margin: 1em 0;
+    }
+
+    h4 {
+        font-size: 1.7em;
+    }
+
+    h5 {
+        font-size: 1.1em;
+    }
+
+    img.keyboard {
+        height: 400px;
+        width: 520px;
+    }
+    
+
+    .midRow {
+        justify-content: center;
+    }
+}
